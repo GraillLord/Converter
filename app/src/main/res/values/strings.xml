@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EDF Converter</string>
+    <string name="hintPds"><i>"Entrer un PDS"</i></string>
+    <string name="hintPrm"><i>"Entrer un PRM"</i></string>
+</resources>

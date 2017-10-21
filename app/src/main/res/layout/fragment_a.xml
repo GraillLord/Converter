@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_weight="25"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#4d000000">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="15"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:id="@+id/txtPds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PDS : "
+                            android:textSize="18sp"
+                            android:textColor="#ff6600"
+                            android:shadowColor="#000000"
+                            android:shadowDx="0.5"
+                            android:shadowDy="0.5"
+                            android:shadowRadius="1.0"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true" />
+
+                        <EditText
+                            android:id="@+id/f1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLength="9"
+                            android:hint="@string/hintPds"
+                            android:textColorHint="#d3d3d3"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:textSize="18sp"
+                            android:background="#996e6e6e"
+                            android:lines="1"
+                            android:shadowColor="#000000"
+                            android:shadowDx="0.5"
+                            android:shadowDy="0.5"
+                            android:shadowRadius="1.0"
+                            android:layout_toRightOf="@id/txtPds"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <LinearLayout
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:id="@+id/convertBtn1"
+                            android:layout_weight="5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Convertir"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/btn_shape2"
+                            android:drawableLeft="@mipmap/ic_btn" />
+
+                        <LinearLayout
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:id="@+id/txtPrm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PRM : "
+                            android:textSize="18sp"
+                            android:textColor="#ff6600"
+                            android:shadowColor="#000000"
+                            android:shadowDx="0.5"
+                            android:shadowDy="0.5"
+                            android:shadowRadius="1.0"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/f2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:textColor="#ffffff"
+                            android:background="#996e6e6e"
+                            android:textIsSelectable="true"
+                            android:shadowColor="#000000"
+                            android:shadowDx="0.5"
+                            android:shadowDy="0.5"
+                            android:shadowRadius="1.0"
+                            android:layout_toRightOf="@id/txtPrm"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/refresh_btn"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:backgroundTint="#99000000" />
+
+            <LinearLayout
+                android:layout_weight="20"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:id="@+id/hidextra"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4d000000">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="15"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txtEdl"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="EDL : "
+                                android:textColor="#ff6600"
+                                android:shadowColor="#000000"
+                                android:shadowDx="0.5"
+                                android:shadowDy="0.5"
+                                android:shadowRadius="1.0"
+                                android:gravity="left" />
+
+                            <TextView
+                                android:id="@+id/f3"
+                                android:layout_weight="1.5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:background="#996e6e6e"
+                                android:textIsSelectable="true"
+                                android:shadowColor="#000000"
+                                android:shadowDx="0.5"
+                                android:shadowDy="0.5"
+                                android:shadowRadius="1.0" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txtTc"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Client : "
+                                android:textColor="#ff6600"
+                                android:shadowColor="#000000"
+                                android:shadowDx="0.5"
+                                android:shadowDy="0.5"
+                                android:shadowRadius="1.0"
+                                android:gravity="left" />
+
+                            <TextView
+                                android:id="@+id/f5"
+                                android:layout_weight="1.5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:background="#996e6e6e"
+                                android:textIsSelectable="true"
+                                android:shadowColor="#000000"
+                                android:shadowDx="0.5"
+                                android:shadowDy="0.5"
+                                android:shadowRadius="1.0" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txtEn"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Energie : "
+                                android:textColor="#ff6600"
+                                android:shadowColor="#000000"
+                                android:shadowDx="0.5"
+                                android:shadowDy="0.5"
+                                android:shadowRadius="1.0"
+                                android:gravity="left" />
+
+                            <TextView
+                                android:id="@+id/f6"
+                                android:layout_weight="1.5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:background="#996e6e6e"
+                                android:textIsSelectable="true"
+                                android:shadowColor="#000000"
+                                android:shadowDx="0.5"
+                                android:shadowDy="0.5"
+                                android:shadowRadius="1.0" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txtNc"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Compteur : "
+                                android:textColor="#ff6600"
+                                android:shadowColor="#000000"
+                                android:shadowDx="0.5"
+                                android:shadowDy="0.5"
+                                android:shadowRadius="1.0"
+                                android:gravity="left" />
+
+                            <TextView
+                                android:id="@+id/f7"
+                                android:layout_weight="1.5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:background="#996e6e6e"
+                                android:textIsSelectable="true"
+                                android:shadowColor="#000000"
+                                android:shadowDx="0.5"
+                                android:shadowDy="0.5"
+                                android:shadowRadius="1.0" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</LinearLayout>
